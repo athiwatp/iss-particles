@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+    <div id="vue-app">
+        <h1>International Space Station Position</h1>
+        <p>Current people in space: {{peopleCount}}</p>
+        <p class="location-container animated " id="location-container" v-bind:class="[animationClass]">{{position}}</p>
+    </div>
+    <canvas class="background"></canvas>
+    <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+    <script src="init.js"></script>
+</body>
+</html>
